@@ -5,14 +5,14 @@
 */
 
 terraform {
+  required_version = ">= 0.13"
   required_providers {
     aws = {
       source  = "hashicorp/aws"
-      version = "~> 3.0"
+      version = "=4.4.0"
     }
   }
 }
-
 provider "aws" {
   access_key                  = "mock_access_key"
   secret_key                  = "mock_secret_key"
